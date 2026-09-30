@@ -1,0 +1,36 @@
+{
+  "name": "flowsight-students-landing",
+  "version": "0.1.0",
+  "private": true,
+  "packageManager": "pnpm@10.33.4",
+  "engines": {
+    "node": ">=20.9.0 <23",
+    "pnpm": ">=10.33.4 <11"
+  },
+  "scripts": {
+    "dev": "next dev --webpack",
+    "build": "next build --webpack",
+    "start": "next start",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit",
+    "verify": "node scripts/verify.mjs"
+  },
+  "dependencies": {
+    "@phosphor-icons/react": "~2.1.10",
+    "next": "~16.3.2",
+    "react": "~19.2.8",
+    "react-dom": "~19.2.8"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "~4.3.3",
+    "@types/node": "~22.19.0",
+    "@types/react": "~19.2.8",
+    "@types/react-dom": "~19.2.3",
+    "eslint": "~9.39.4",
+    "eslint-config-next": "~16.3.2",
+    "playwright": "1.62.1",
+    "postcss": "~8.5.0",
+    "tailwindcss": "~4.3.3",
+    "typescript": "~5.9.3"
+  }
+}
