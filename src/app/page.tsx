@@ -212,9 +212,9 @@ export default function StudentsHome() {
             <div className={styles.overviewCopy}>
               <span className={styles.overviewStatus}>PROPOSED / ORGANIZATION OVERVIEW</span>
               <h2 id="overview-title">See the group. <em>Respect the person.</em></h2>
-              <p>Understand how many licenses are in use and, when learners choose to share a broad summary, how the cohort is focusing. No student names, app titles, individual hours or rankings.</p>
+              <p>See how many licenses are in use. A future, separate opt-in in each learner&apos;s app could add broad cohort focus patterns. No student names, app titles, individual hours or rankings.</p>
               <a className={styles.primaryAction} href="/dashboard-preview">Explore the dashboard concept <ArrowUpRight size={19} weight="bold" aria-hidden /></a>
-              <p className={styles.overviewDisclaimer}>Illustrative figures below. Focus metrics require voluntary sharing from at least 10 students.</p>
+              <p className={styles.overviewDisclaimer}>Illustrative figures below. Planned focus metrics require a separate student opt-in and at least 10 contributors.</p>
             </div>
             <div className={styles.overviewVisual} aria-label="Illustrative organization dashboard with sample group figures">
               <div className={styles.overviewVisualTop}><span>FlowSight / Organizations</span><span>Sample data</span></div>
@@ -286,13 +286,13 @@ export default function StudentsHome() {
             <div className={styles.privacyHeading}>
               <ShieldCheck size={38} weight="duotone" aria-hidden />
               <h2 id="privacy-title">The institution buys access. <span>Students keep the work.</span></h2>
-              <p>Focus analysis runs on each learner&apos;s device. The institution sees group adoption and, only with voluntary sharing, broad group patterns. A student&apos;s sessions and reports stay private.</p>
+              <p>Focus analysis stays on each learner&apos;s device. Future group summaries require a separate choice in the app, off by default and revocable. Without it, the institution sees only aggregate license activation.</p>
             </div>
             <div className={styles.privacySplit}>
               <div>
                 <Receipt size={26} weight="duotone" aria-hidden />
                 <h3>What the institution receives</h3>
-                <ul><li>Order, invoice and private code CSV</li><li>Group count of activated licenses</li><li>Planned: broad metrics from voluntary contributors</li></ul>
+                <ul><li>Order, invoice and private code CSV</li><li>Group count of activated licenses</li><li>Planned: broad metrics from students who opt in separately</li></ul>
               </div>
               <div>
                 <Monitor size={26} weight="duotone" aria-hidden />
@@ -300,7 +300,7 @@ export default function StudentsHome() {
                 <ul><li>Focus sessions and activity history</li><li>Insights and personal PDF reports</li><li>Guided reflections, if built later</li></ul>
               </div>
             </div>
-            <p className={styles.privacyBoundary}><LockKey size={21} weight="duotone" aria-hidden /> The dashboard has no student list, personal hours, app titles, individual progress or rankings. Focus averages appear only for groups with at least 10 voluntary contributors.</p>
+            <p className={styles.privacyBoundary}><LockKey size={21} weight="duotone" aria-hidden /> The dashboard has no student list, personal hours, app titles, individual progress or rankings. Planned focus averages stay hidden until at least 10 students opt in.</p>
           </div>
         </section>
 

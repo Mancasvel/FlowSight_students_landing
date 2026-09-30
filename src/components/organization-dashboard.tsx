@@ -74,7 +74,7 @@ export default function OrganizationDashboard({
         <div className={styles.intro}>
           <div>
             <h1>A clearer view of the cohort.</h1>
-            <p>See adoption and broad focus patterns across the group. Each learner keeps their own sessions, apps, reports and activity history in their Individual app.</p>
+            <p>See adoption and, with a separate student opt-in, broad focus patterns across the group. Each learner keeps their own sessions, apps, reports and activity history in their Individual app.</p>
           </div>
           <div className={styles.scopeNote}><ShieldCheck size={23} weight="duotone" aria-hidden /><span>Group totals only<br /><strong>No student profiles or rankings</strong></span></div>
         </div>
@@ -98,7 +98,7 @@ export default function OrganizationDashboard({
 
         <section className={styles.rhythm} aria-labelledby="rhythm-title">
           <div className={styles.sectionLead}>
-            <div><h2 id="rhythm-title">How focus adds up</h2><p>Broad 28-day totals and averages from students who choose to contribute a summary.</p></div>
+            <div><h2 id="rhythm-title">How focus adds up</h2><p>Broad 28-day totals and averages from students who separately choose to contribute a summary.</p></div>
             <span>LAST 28 DAYS</span>
           </div>
           {hasMetrics ? (
@@ -116,7 +116,7 @@ export default function OrganizationDashboard({
           ) : (
             <div className={styles.emptyMetrics}>
               <ShieldCheck size={30} weight="duotone" aria-hidden />
-              <div><h3>Group focus data is not available yet.</h3><p>This area will open after the desktop app supports explicit group sharing and at least 10 students contribute broad summaries. Until then, no focus hours, deep-focus averages or interruption averages are shown.</p></div>
+              <div><h3>Group focus data is not available yet.</h3><p>This area will open after the desktop app supports a separate, revocable opt-in and at least 10 students contribute broad summaries. Until then, no focus hours, deep-focus averages or interruption averages are shown.</p></div>
             </div>
           )}
         </section>

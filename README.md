@@ -2,7 +2,7 @@
 
 Standalone Next.js site for the proposed FlowSight Students organization program. It is intended for `students.flowsight.site`; `solo.flowsight.site` remains the FlowSight Individual site in its existing repository.
 
-The home page shows the institutional offer, authentic FlowSight Individual captures, privacy boundaries and one-time bulk pricing. `/dashboard-preview` is an illustrative organization dashboard with sample figures. The site is in a prelaunch state: there is no checkout, private buyer dashboard, license delivery or student data collection in this repository.
+The home page shows the institutional offer, authentic FlowSight Individual captures, privacy boundaries and one-time bulk pricing. `/dashboard-preview` is an illustrative organization dashboard with sample figures. The site is in a prelaunch state: there is no checkout, private buyer dashboard, license delivery or student data collection in this repository. The confirmed consent boundary is recorded in [VOLUNTARY_PARTICIPATION.md](./VOLUNTARY_PARTICIPATION.md).
 
 ## Local development
 

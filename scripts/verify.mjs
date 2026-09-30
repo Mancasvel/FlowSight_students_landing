@@ -35,6 +35,11 @@ try {
     if (item.name !== "dark") {
       await page.locator("#licenses").screenshot({ path: `artifacts/students-pricing-${item.name}.png` });
     }
+    if (item.name === "mobile") {
+      await page.locator("#overview").screenshot({ path: "artifacts/students-overview-mobile.png" });
+      await page.locator("#privacy").screenshot({ path: "artifacts/students-privacy-mobile.png" });
+      await page.screenshot({ path: "artifacts/students-privacy-viewport.png" });
+    }
     const width = await page.evaluate(() => document.documentElement.scrollWidth);
     if (width > item.width + 1) throw new Error(`${item.name}: horizontal overflow ${width}px`);
     if (errors.length) throw new Error(`${item.name}: ${errors.join("; ")}`);
