@@ -18,9 +18,10 @@ import {
 } from "@phosphor-icons/react/dist/ssr";
 import {
   BULK_DISCOUNT_MIN_SEATS,
-  BULK_MAX_SEATS,
-  BULK_PRICE_CENTS,
+  BULK_LARGE_MIN_SEATS,
   INDIVIDUAL_PRICE_CENTS,
+  LARGE_BULK_PRICE_CENTS,
+  STANDARD_BULK_PRICE_CENTS,
 } from "@/lib/organization-offer";
 import { exampleDashboardData } from "@/components/organization-dashboard";
 import summaryCapture from "../../public/product/flowsight-summary.png";
@@ -320,13 +321,18 @@ export default function StudentsHome() {
                 <strong>€{INDIVIDUAL_PRICE_CENTS / 100}</strong>
                 <p>per license · one-time</p>
               </div>
+              <div className={styles.priceTier}>
+                <span>{BULK_DISCOUNT_MIN_SEATS}–{BULK_LARGE_MIN_SEATS - 1} licenses</span>
+                <strong>€{STANDARD_BULK_PRICE_CENTS / 100}</strong>
+                <p>per license · one-time</p>
+              </div>
               <div className={`${styles.priceTier} ${styles.priceTierVolume}`}>
-                <span>{BULK_DISCOUNT_MIN_SEATS}–{BULK_MAX_SEATS} licenses</span>
-                <strong>€{BULK_PRICE_CENTS / 100}</strong>
+                <span>{BULK_LARGE_MIN_SEATS}+ licenses</span>
+                <strong>€{LARGE_BULK_PRICE_CENTS / 100}</strong>
                 <p>per license · one-time</p>
               </div>
             </div>
-            <p className={styles.pricingNote}>Prices include applicable tax. From {BULK_DISCOUNT_MIN_SEATS} licenses, the €{BULK_PRICE_CENTS / 100} rate applies to every license in the order.</p>
+            <p className={styles.pricingNote}>Prices include applicable tax. Each order uses one rate for every license: €{INDIVIDUAL_PRICE_CENTS / 100} for 1–{BULK_DISCOUNT_MIN_SEATS - 1}, €{STANDARD_BULK_PRICE_CENTS / 100} for {BULK_DISCOUNT_MIN_SEATS}–{BULK_LARGE_MIN_SEATS - 1}, or €{LARGE_BULK_PRICE_CENTS / 100} from {BULK_LARGE_MIN_SEATS} licenses.</p>
             <div className={styles.pilotAction}>
               <div>
                 <h3>Equip a whole group in one order.</h3>

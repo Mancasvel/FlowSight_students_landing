@@ -18,4 +18,4 @@ Set `NEXT_PUBLIC_SITE_URL` to the deployed origin. The root and dashboard previe
 
 ## Launch boundary
 
-The displayed €25 and €10 prices are one-time, tax-inclusive figures approved for the proposal. Live checkout must wait for verified payment, installer delivery, license activation and recovery, and a private buyer dashboard. Real focus metrics require an explicit voluntary contribution flow in the desktop apps and aggregation over at least 10 contributors. The current dashboard preview uses sample data only.
+The displayed €25 (1–99 licenses), €15 (100–500), and €10 (501 or more) prices are one-time, tax-inclusive figures approved for the proposal. Each tier's rate applies to every license in its order. Live checkout must wait for verified payment, installer delivery, license activation and recovery, and a private buyer dashboard. Real focus metrics require an explicit voluntary contribution flow in the desktop apps and aggregation over at least 10 contributors. The current dashboard preview uses sample data only.
