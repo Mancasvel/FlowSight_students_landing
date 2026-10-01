@@ -44,10 +44,15 @@ try {
     if (width > item.width + 1) throw new Error(`${item.name}: horizontal overflow ${width}px`);
     if (errors.length) throw new Error(`${item.name}: ${errors.join("; ")}`);
     if (item.name === "desktop") {
-      const link = page.getByRole("link", { name: /Explore the dashboard concept/i });
+      const link = page.getByRole("link", { name: /Preview cohort dashboard/i });
       await link.click();
       await page.waitForURL("**/dashboard-preview");
       await page.getByText("This is an interface concept with sample figures.", { exact: false }).waitFor();
+      const activationNumber = page.locator('section[aria-labelledby="adoption-title"] strong').first();
+      const activationBounds = await activationNumber.boundingBox();
+      if (!activationBounds || activationBounds.y + activationBounds.height > item.height) {
+        throw new Error("desktop: cohort activation figure is below the first viewport");
+      }
       await page.screenshot({ path: "artifacts/students-dashboard-preview.png" });
     }
     console.log(`${item.name}: home 200, no page errors or horizontal overflow`);

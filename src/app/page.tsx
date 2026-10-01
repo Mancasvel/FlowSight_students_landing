@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import {
-  ArrowDown,
   ArrowRight,
   ArrowUpRight,
   BookOpen,
@@ -57,7 +56,7 @@ export default function StudentsHome() {
           <nav aria-label="Page navigation" className={styles.navigation}>
             <a href="#features">The app</a>
             <a href="#approach">The approach</a>
-            <a href="#overview">The overview</a>
+            <a href="/dashboard-preview">Cohort dashboard</a>
             <a href="#next">What&apos;s next</a>
             <a href="#privacy">Privacy</a>
           </nav>
@@ -82,8 +81,8 @@ export default function StudentsHome() {
                 <a className={styles.primaryAction} href="#licenses">
                   Explore bulk licenses <ArrowUpRight size={19} weight="bold" aria-hidden />
                 </a>
-                <a className={styles.textAction} href="#features">
-                  See the app <ArrowDown size={18} weight="bold" aria-hidden />
+                <a className={styles.textAction} href="/dashboard-preview">
+                  Preview cohort dashboard <ArrowUpRight size={18} weight="bold" aria-hidden />
                 </a>
               </div>
               <div className={styles.heroAssurance}>
