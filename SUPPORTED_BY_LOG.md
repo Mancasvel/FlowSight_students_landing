@@ -26,4 +26,10 @@ The isolated worktree starts at `bf0744849aa7e4d8ec4c555227623507d2b9841e`. Exis
 
 Project: `flowsight-students-landing`, `prj_QewFwBeFBt40emSA1ENuCuhw8PAZ`.
 
-Stable public target: <https://flowsight-students-landing.vercel.app>. `students.flowsight.site` is assigned to the project; user is managing its DNS. Deployment result will be recorded after production verification.
+Stable public target: <https://flowsight-students-landing.vercel.app>. `students.flowsight.site` is assigned to the project; user is managing its DNS.
+
+Feature commit `3c3f3f1` was pushed as a fast-forward to `origin/main` after confirming the remote still matched the exact base. Vercel's Git integration deployed it automatically to production as `dpl_8shCzsyMFY6GaqNbsaR8iigw8mJv`, <https://flowsight-students-landing-aeil5ybjy-mancasvels-projects.vercel.app>; status Ready, with the stable public alias assigned.
+
+Production verification against <https://flowsight-students-landing.vercel.app> passed all four viewports: HTTP 200, all six exact partner names/order, loaded/contained logos, no page errors, no horizontal overflow. Captures from `artifacts/supported-by-production/students-supported-by-{desktop,mobile,dark,mobile-dark}.png` were opened and visually inspected. The matching JSON report records the checks. No DNS settings were changed.
+
+The original `FlowSight_students_landing` working tree remains at its prior HEAD with its `.gitignore` edit untouched. This feature lives in the isolated `FlowSight_supported_by_worktrees/students` checkout and remote main.
