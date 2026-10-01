@@ -24,6 +24,7 @@ import {
   STANDARD_BULK_PRICE_CENTS,
 } from "@/lib/organization-offer";
 import { exampleDashboardData } from "@/components/organization-dashboard";
+import { SupportedBy } from "@/components/supported-by";
 import summaryCapture from "../../public/product/flowsight-summary.png";
 import todayCapture from "../../public/product/flowsight-today.png";
 import styles from "./organizations.module.css";
@@ -121,6 +122,8 @@ export default function StudentsHome() {
             </figure>
           </div>
         </section>
+
+        <SupportedBy />
 
         <section id="features" className={styles.features} aria-labelledby="features-title">
           <div className={styles.frame}>
